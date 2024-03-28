@@ -33,8 +33,6 @@ steps:
   #  platform: '$(buildPlatform)'
    # configuration: '$(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
+- task: CmdLine@2
   inputs:
-    command: 'dotnet publish -c Release'
-    publishWebProjects: true
-    arguments: 'dotnet publish'
+    script: 'dotnet publish'
