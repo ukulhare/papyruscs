@@ -35,6 +35,6 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'dotnet publish'
+    command: 'dotnet publish -c Release'
     publishWebProjects: true
     arguments: 'dotnet publish'
